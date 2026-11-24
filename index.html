@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NONO GAMES</title>
+<meta name="description" content="NONO GAMES — すべての世界への入口。nono のゲーム作品ポータル。">
+<style>
+  :root{
+    --bg:#0b0e17; --panel:#131826; --panel2:#0e1220; --line:#2a3242;
+    --ink:#ece6d6; --sub:#9aa7bd; --gold:#e8b030; --accent:#6aa0e0;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0;background:#05070c}
+  body{
+    font-family:"Hiragino Kaku Gothic ProN","Noto Sans JP","Noto Sans CJK JP",sans-serif;
+    color:var(--ink);
+  }
+  /* 縦向き専用レイアウト：どんな画面でも中央の1列（最大480px）だけを使う */
+  .wrap{
+    max-width:480px; margin:0 auto; min-height:100dvh;
+    background:var(--bg);
+    padding:calc(20px + env(safe-area-inset-top)) 16px calc(28px + env(safe-area-inset-bottom));
+    box-shadow:0 0 0 1px #1a2132, 0 0 60px rgba(0,0,0,.8);
+  }
+  header{text-align:center; padding:18px 4px 6px}
+  .kicker{letter-spacing:.35em; font-size:11px; color:var(--sub); margin:0 0 8px}
+  h1{
+    margin:0; font-size:44px; line-height:1.05; font-weight:900; letter-spacing:.04em;
+    background:linear-gradient(180deg,#ffffff 0%,#b8c4d8 45%,#6a7690 50%,#c8d2e4 75%,#8892a8 100%);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+    text-shadow:0 2px 0 rgba(10,16,32,.0);
+  }
+  .subtitle{margin:10px 0 2px; font-size:15px; color:var(--gold); font-weight:700; letter-spacing:.12em}
+  .lead{margin:8px auto 0; font-size:12.5px; color:var(--sub); line-height:1.7; max-width:340px}
+  .rule{height:3px; background:linear-gradient(90deg,transparent,var(--line) 20%,var(--line) 80%,transparent); margin:20px 0 4px; border:0}
+  .card{
+    display:block; text-decoration:none; color:var(--ink);
+    background:var(--panel); border:2px solid var(--line); border-radius:14px;
+    overflow:hidden; margin:14px 0;
+  }
+  .card:active{border-color:var(--gold)}
+  .card img{display:block; width:100%; height:auto; background:var(--panel2)}
+  .card .body{padding:12px 14px 14px}
+  .card h2{margin:0; font-size:17px; line-height:1.35; text-align:left}
+  .card p{margin:6px 0 0; font-size:13px; line-height:1.7; color:var(--sub); text-align:left}
+  .play{
+    display:inline-block; margin-top:10px; font-size:13px; font-weight:700; color:#0b0e17;
+    background:var(--gold); border-radius:999px; padding:6px 16px;
+  }
+  footer{margin-top:26px; text-align:center; color:var(--sub); font-size:11.5px; line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="kicker">GAME PORTAL</p>
+    <h1>NONO GAMES</h1>
+    <p class="subtitle">すべての世界への入口</p>
+    <p class="lead">タップすると、そのままゲームが始まります。</p>
+  </header>
+
+  <hr class="rule">
+
+  <a class="card" href="https://ukos.github.io/nono-playground/">
+    <img src="assets/logo-botd.png" alt="NONO: Blade of the Dawn ロゴ">
+    <div class="body">
+      <h2>NONO: Blade of the Dawn</h2>
+      <p>霧に沈んだ十六の地を、光の剣とともに巡るアクションRPG。ライバルに勝つたび、剣が育つ。</p>
+      <span class="play">▶ あそぶ</span>
+    </div>
+  </a>
+
+  <a class="card" href="https://ukos.github.io/nono-playground/stage-actor/">
+    <img src="assets/logo-stageactor.png" alt="NONO Stage Actor ロゴ">
+    <div class="body">
+      <h2>NONO Stage Actor</h2>
+      <p>nono と仲間たちが名作を演じるストーリーテラー。『藪の中』『死神』『芝浜』など上演中。</p>
+      <span class="play">▶ あそぶ</span>
+    </div>
+  </a>
+
+  <a class="card" href="https://ukos.github.io/nono-hd2d/lite/">
+    <img src="assets/logo-lite.jpg" alt="NONO: Blade of the Dawn HD-2D lite ロゴ">
+    <div class="body">
+      <h2>NONO: Blade of the Dawn — HD-2D lite</h2>
+      <p>本編の世界を HD-2D で作り直す試作版。ドット絵のキャラが 3D の世界を歩く。</p>
+      <span class="play">▶ あそぶ</span>
+    </div>
+  </a>
+
+  <a class="card" href="https://ukos.github.io/nono-field-golf-playground/">
+    <img src="assets/logo-fieldgolf.jpg" alt="FIELD GOLF ロゴ">
+    <div class="body">
+      <h2>FIELD GOLF</h2>
+      <p>フィールドで打つ、爽快感いちばんのゴルフ。全18コース、打ったらすぐ次のショットへ。</p>
+      <span class="play">▶ あそぶ</span>
+    </div>
+  </a>
+
+  <a class="card" href="https://ukos.github.io/nono-redline-agent-playground/">
+    <img src="assets/logo-redline.jpg" alt="REDLINE AGENT ロゴ">
+    <div class="body">
+      <h2>REDLINE AGENT</h2>
+      <p>レイが主人公のカバーシューター。スワイプで物陰を移り、赤いレーザーの敵を撃つ。</p>
+      <span class="play">▶ あそぶ</span>
+    </div>
+  </a>
+
+  <a class="card" href="https://ukos.github.io/nono-the-caper-playground/">
+    <img src="assets/logo-caper.jpg" alt="THE CAPER ロゴ">
+    <div class="body">
+      <h2>THE CAPER — Clockwork Loot &amp; Logic</h2>
+      <p>スパイ SECOND のからくりパズル。下見と実行の二段構えで挑む、全11作戦。</p>
+      <span class="play">▶ あそぶ</span>
+    </div>
+  </a>
+
+  <a class="card" href="https://ukos.github.io/nono-fault-line-playground/">
+    <img src="assets/logo-faultline.jpg" alt="FAULT LINE ロゴ">
+    <div class="body">
+      <h2>FAULT LINE — DESTINATION: INVESTIGATION</h2>
+      <p>観測だけを頼りにネットワーク障害の原因を特定する診断パズル。全48シナリオ。</p>
+      <span class="play">▶ あそぶ</span>
+    </div>
+  </a>
+
+  <footer>
+    NONO GAMES<br>
+    ブラウザですぐに遊べます（インストール不要）
+  </footer>
+</div>
+</body>
+</html>
