@@ -24,13 +24,8 @@
     box-shadow:0 0 0 1px #1a2132, 0 0 60px rgba(0,0,0,.8);
   }
   header{text-align:center; padding:18px 4px 6px}
-  .kicker{letter-spacing:.35em; font-size:11px; color:var(--sub); margin:0 0 8px}
-  h1{
-    margin:0; font-size:44px; line-height:1.05; font-weight:900; letter-spacing:.04em;
-    background:linear-gradient(180deg,#ffffff 0%,#b8c4d8 45%,#6a7690 50%,#c8d2e4 75%,#8892a8 100%);
-    -webkit-background-clip:text; background-clip:text; color:transparent;
-    text-shadow:0 2px 0 rgba(10,16,32,.0);
-  }
+  .sr{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0)}
+  .logo{display:block; width:min(100%, 360px); height:auto; margin:0 auto}
   .subtitle{margin:10px 0 2px; font-size:15px; color:var(--gold); font-weight:700; letter-spacing:.12em}
   .lead{margin:8px auto 0; font-size:12.5px; color:var(--sub); line-height:1.7; max-width:340px}
   .rule{height:3px; background:linear-gradient(90deg,transparent,var(--line) 20%,var(--line) 80%,transparent); margin:20px 0 4px; border:0}
@@ -54,8 +49,8 @@
 <body>
 <div class="wrap">
   <header>
-    <p class="kicker">GAME PORTAL</p>
-    <h1>NONO GAMES</h1>
+    <h1 class="sr">NONO GAMES</h1>
+    <img class="logo" src="assets/logo-portal.jpg" alt="NONO GAMES — ALL WORLDS, ONE PORTAL">
     <p class="subtitle">すべての世界への入口</p>
     <p class="lead">タップすると、そのままゲームが始まります。</p>
   </header>
