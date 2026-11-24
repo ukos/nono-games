@@ -25,7 +25,12 @@
   }
   header{text-align:center; padding:18px 4px 6px}
   .sr{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0)}
-  .logo{display:block; width:min(100%, 360px); height:auto; margin:0 auto}
+  .logo{
+    display:block; width:min(100%, 360px); height:auto; margin:0 auto;
+    padding:6px; background:var(--panel2);
+    border:3px solid var(--gold); border-radius:18px;
+    box-shadow:0 0 0 3px #0c0e13, 0 0 24px rgba(232,176,48,.25);
+  }
   .subtitle{margin:10px 0 2px; font-size:15px; color:var(--gold); font-weight:700; letter-spacing:.12em}
   .lead{margin:8px auto 0; font-size:12.5px; color:var(--sub); line-height:1.7; max-width:340px}
   .rule{height:3px; background:linear-gradient(90deg,transparent,var(--line) 20%,var(--line) 80%,transparent); margin:20px 0 4px; border:0}
